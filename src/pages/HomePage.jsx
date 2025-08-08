@@ -33,26 +33,29 @@ const HomePage = () => {
         <h1 className="text-5xl font-rubik text-white opacity-70 text-stroke-black stroke-[1.5]">EXPLORE THE WORLD</h1>
         
         {/* Search Bar */}
-        <div className="mt-8 bg-white opacity-70 p-2 rounded-3xl flex space-x-4 shadow-md">
-          <input type="text" placeholder="Search a destination" className="p-2 w-48 text-black border-r-[1.3px] border-black" />
-          <input type="date" placeholder="Start date" className="text-black opacity-70 p-2 w-[9em] border-r-[1.3px] border-black" />
-          <input type="date" placeholder="End date" className="text-black opacity-70 p-2 w-[9em] rounded-md" />
+        <div className="mt-8 bg-white opacity-70 p-2 rounded-3xl flex flex-wrap md:flex-nowrap gap-4 shadow-md">
+          <input type="text" placeholder="Search a destination" className="p-2 flex-1 min-w-[180px] text-black border-r-[1.3px] border-black" />
+          <input type="date" placeholder="Start date" className="text-black opacity-70 p-2 flex-1 min-w-[130px] border-r-[1.3px] border-black" />
+          <input type="date" placeholder="End date" className="text-black opacity-70 p-2 flex-1 min-w-[130px] rounded-md" />
           <button className="px-4 py-2 text-white rounded-3xl">
             <IconContext.Provider value={{ size: "1.3em", color: "black" }}>
               <IoSearchOutline />
             </IconContext.Provider></button>
         </div>
-        <img src={vector} className='absolute inset-x-0 bottom-0'  />
+        <img src={vector} className='absolute inset-x-0 bottom-0 w-full'  />
         
       </div>
       
-      <div className="border-b-[1px] border-black mx-48">
+      <div className="border-b border-black mx-4 sm:mx-12 md:mx-24 lg:mx-48">
       <div className="p-8 text-center tenor-sans-regular text-[#104657]">
-        <img src={circle} className='pb-8 place-self-center'  />
-        <p>Discover the world with Global Journeys Travel Agency, your ultimate travel partner for</p>
-        <p>unforgettable adventures. Whether you are looking for a relaxing beach getaway, an exhilarating</p>
-        <p>mountain trek, or a cultural exploration, we offer tailor-made packages to suit your every</p>
-        <p>need. Let us handle the details while you create lasting memories.</p>
+        <img src={circle} className='pb-8 mx-auto'  />
+        <p>Discover the world with Global Journeys Travel Agency, your ultimate travel partner for
+          <br />
+        unforgettable adventures. Whether you are looking for a relaxing beach getaway, an exhilarating
+        <br />
+        mountain trek, or a cultural exploration, we offer tailor-made packages to suit your every
+        <br />
+        need. Let us handle the details while you create lasting memories.</p>
         </div>
       </div>
 

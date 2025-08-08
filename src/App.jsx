@@ -5,10 +5,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Destination from "./pages/Destination";
 import Continent from "./pages/Continent";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
