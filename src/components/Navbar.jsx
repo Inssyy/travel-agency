@@ -19,9 +19,15 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-sm uppercase">
+           <Link to="/back-to-home">
           <li className="hover:text-[#FFB703] cursor-pointer">About Us</li>
+          </Link>
+          <Link to="/continent/Europe">
           <li className="hover:text-[#FFB703] cursor-pointer">What We Offer</li>
+          </Link>
+          <Link to="/book-free-consult">
           <li className="hover:text-[#FFB703] cursor-pointer">Get In Touch</li>
+          </Link>
         </ul>
 
         {/* Right Side: Language + Currency */}
